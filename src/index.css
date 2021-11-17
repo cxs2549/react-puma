@@ -16,4 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.invert {
+  filter: invert(100%);
+}
+
+
+
 
