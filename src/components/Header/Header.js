@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import GoldBand from './GoldBand/GoldBand'
 import logo from '../../assets/logo.png'
 import Icons from './Icons/Icons'
+import { Link } from 'react-router-dom'
 
 const StyledHeader = styled.header.attrs({ className: ' border-b transition-all duration-300' })`
 `
@@ -11,7 +12,9 @@ const Container = ({ children }) => {
 const Logo = () => {
 	return (
 		<div className="flex items-center py-2 pl-4">
-			<img id="logo" src={logo} alt="logo" className="w-12 transition-all duration-300" />
+			<Link to="/">
+				<img id="logo" src={logo} alt="logo" className="w-12 transition-all duration-300" />
+			</Link>
 		</div>
 	)
 }

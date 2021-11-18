@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StyledMenu = styled.div.attrs({ className: 'py-4' })`
+const StyledMenu = styled.div.attrs({ className: 'py-8' })`
     position: fixed;
     top: 99px;
     left: 0;
