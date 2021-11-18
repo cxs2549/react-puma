@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
-const StyledMenu = styled.div.attrs({ className: 'py-8 px-16' })`
+const StyledMenu = styled.div.attrs({ className: 'py-4' })`
     position: fixed;
-    top: 79px;
+    top: 99px;
     left: 0;
     width: 100%;
     height: calc(100% - 79px);
-    background: black;
+    background: ${props => props.bg || 'black'};
     color: white;
     z-index: 1;
     overflow-y: scroll;
 `
 
-const Menu = ({ children }) => {
+const Menu = ({ children, bg }) => {
 	return (
-		<StyledMenu>
+		<StyledMenu bg={bg}>
 			{children}
 		</StyledMenu>
 	)

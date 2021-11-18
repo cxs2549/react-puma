@@ -569,7 +569,7 @@ const Burger = () => {
 			<Hamburger toggled={isOpen} toggle={handleOpen} size={29} />
 			<CSSTransition in={isOpen} timeout={300} classNames="menu" unmountOnExit>
 				<Menu>
-					<ul className="flex flex-col gap-2 capitalize">
+					<ul className="flex flex-col gap-1 capitalize px-12 mt-4">
 						{links.map((link) => <Item text={link.title} links={link.sublinks} />)}
 					</ul>
 				</Menu>
