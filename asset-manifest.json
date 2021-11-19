@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-puma/static/css/main.db024aa5.chunk.css",
+    "main.js": "/react-puma/static/js/main.16ec1e38.chunk.js",
+    "main.js.map": "/react-puma/static/js/main.16ec1e38.chunk.js.map",
+    "runtime-main.js": "/react-puma/static/js/runtime-main.8ec1b82f.js",
+    "runtime-main.js.map": "/react-puma/static/js/runtime-main.8ec1b82f.js.map",
+    "static/js/2.19668e0b.chunk.js": "/react-puma/static/js/2.19668e0b.chunk.js",
+    "static/js/2.19668e0b.chunk.js.map": "/react-puma/static/js/2.19668e0b.chunk.js.map",
+    "index.html": "/react-puma/index.html",
+    "static/css/main.db024aa5.chunk.css.map": "/react-puma/static/css/main.db024aa5.chunk.css.map",
+    "static/js/2.19668e0b.chunk.js.LICENSE.txt": "/react-puma/static/js/2.19668e0b.chunk.js.LICENSE.txt",
+    "static/media/everyday.b25be9e5.png": "/react-puma/static/media/everyday.b25be9e5.png",
+    "static/media/hero.ba9bae64.jpg": "/react-puma/static/media/hero.ba9bae64.jpg",
+    "static/media/logo.ad016a1e.png": "/react-puma/static/media/logo.ad016a1e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ec1b82f.js",
+    "static/js/2.19668e0b.chunk.js",
+    "static/css/main.db024aa5.chunk.css",
+    "static/js/main.16ec1e38.chunk.js"
+  ]
+}
