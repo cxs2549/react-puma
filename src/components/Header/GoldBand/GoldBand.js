@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
 const StyledGoldBand = styled.div`
-	background-color: hsl(36.2, 27.4%, 55.6%);
+	background-color: hsl(36.2, 27.4%, 59.6%);
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
+	height: 43px;
 	div {
 		width: 290px;
 		display: flex;
@@ -46,7 +47,7 @@ const GoldBand = () => {
 		return () => clearInterval(interval)
 	})
 	return (
-		<StyledGoldBand className=" text-white px-4 w-full h-11 flex items-center gap-3 justify-center uppercase">
+		<StyledGoldBand className=" text-white px-4 w-full flex items-center gap-3 justify-center uppercase">
 			<CSSTransition in={isTrue} timeout={800} classNames="line" unmountOnExit>
 				<div className="flex items-center gap-2">
 					<p>{copy[0]}</p>

@@ -59,13 +59,6 @@ const Search = () => {
 		setOpen(!open)
 	}
 	useOnClickOutside(searchRef, () => setOpen(false))
-	const closeOrSearch = () => {
-		if (open) {
-			return <GrClose size={27} onClick={handleOpen} />
-		} else {
-			return <BiSearch size={30} onClick={handleOpen} />
-		}
-	}
 	return (
 		<StyledSearch className="px-1" ref={searchRef}>
 			<div className="cursor-pointer mt-0.5">

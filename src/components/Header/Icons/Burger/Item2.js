@@ -25,7 +25,7 @@ const Item2 = ({ text, links }) => {
 							<p>Back</p>
 						</div>
 					</button>
-					<ul className="mt-2 flex flex-col px-12">
+					<ul className="mt-2 flex flex-col px-12 pb-4">
 						{links &&
 							links.map((link) => (
 								<Item2 text={link.title || link} links={link.sublinks} />

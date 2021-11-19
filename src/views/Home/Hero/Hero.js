@@ -34,11 +34,11 @@ const Hero = () => {
 			<div id="hero">
 				<img src={hero} alt="" />
 			</div>
-			<div className="absolute text-white top-0 left-0 w-full h-full grid place-items-center">
-				<div className="flex flex-col items-center justify-center gap-4">
+			<div className="absolute text-white top-0 left-0 w-full h-full grid place-items-center ">
+				<div className="flex flex-col items-center justify-center gap-3">
 					<h4 className="font-semibold text-lg">holiday starts now</h4>
 					<div className="flex flex-col gap-2">
-						<h1 className="text-3xl text-center font-bold">
+						<h1 className="text-3xl text-center font-bold opacity-100">
 							ADDITIONAL 30% OFF <br /> MARKDOWNS
 						</h1>
 						<h4 className="font-semibold text-lg text-center leading-6">
@@ -46,7 +46,7 @@ const Hero = () => {
 							<span className="font-normal">CODE:</span> GIFTNOW
 						</h4>
 					</div>
-					<button className="uppercase font-semibold bg-white text-black py-3 px-4 rounded text-sm mt-2">
+					<button className="uppercase font-semibold bg-white text-black py-3 px-4 rounded text-sm mt-4 hover:opacity-100 opacity-80">
 						shop all holiday deals
 					</button>
 				</div>
