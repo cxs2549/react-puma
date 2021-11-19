@@ -3,6 +3,7 @@ import { Fragment } from "react"
 import Cart from './views/Cart/Cart'
 import { useRoutes } from "react-router"
 import Home from "./views/Home/Home"
+import Footer from "./components/Footer/Footer"
 
 const routes = [
   {path: '/', element: <Home />},
@@ -17,6 +18,7 @@ const App = () => {
       <main>
         {element}
       </main>
+      <Footer />
     </Fragment>
   )
 }
