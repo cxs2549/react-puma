@@ -20,6 +20,10 @@ body {
   filter: invert(100%);
 }
 
+.stop-flow {
+  overflow-y: hidden;
+}
+
 
 
 

@@ -57,10 +57,15 @@ const Search = () => {
 	const searchRef = useRef(null)
 	const handleOpen = () => {
 		setOpen(!open)
+		document.body.classList.toggle('stop-flow')
+	}
+	const handleClose= () => {
+		setOpen(false)
+		document.body.classList.remove('stop-flow')
 	}
 	useOnClickOutside(searchRef, () => setOpen(false))
 	return (
-		<StyledSearch className="px-1" ref={searchRef}>
+		<StyledSearch className=" h-10 w-10 flex items-center justify-center xl:hidden" ref={searchRef}>
 			<div className="cursor-pointer mt-0.5">
 				{open ? (
 					<GrClose size={27} onClick={handleOpen} />
@@ -70,7 +75,7 @@ const Search = () => {
 			</div>
 			<CSSTransition in={open} timeout={500} classNames="search" unmountOnExit>
 				<Menu bg="#F4F4F4">
-					<div className="relative max-w-xs mx-auto mb-4">
+					<div className="relative max-w-xs mx-auto my-4">
 						<input
 							id="searchInput"
 							type="search"

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Cart = () => {
     return (
-        <div className="px-3">
+        <div className="w-10 h-10 flex items-center justify-center">
 				<Link to="/cart">
                     <AiOutlineShoppingCart size={30} />
                 </Link>

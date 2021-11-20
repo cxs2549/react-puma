@@ -3,11 +3,14 @@ import { useEffect, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
 const StyledGoldBand = styled.div`
-	background-color: hsl(36.2, 27.4%, 59.6%);
+	background-color: rgb(174, 148, 109);
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
 	height: 43px;
+	@media (min-width: 768px) {
+		font-size: 14px;
+	}
 	div {
 		width: 290px;
 		display: flex;

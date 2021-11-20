@@ -9,7 +9,7 @@ const Item = ({ text, links }) => {
 		<div>
 			<li
 				onClick={() => setIsOpen(true)}
-				className="text-2xl flex items-center justify-between  py-3 cursor-pointer opacity-75 hover:opacity-100 px-3 rounded hover:bg-white hover:text-black transition-colors duration-300"
+				className="text-2xl flex items-center justify-between  py-3 cursor-pointer px-3 rounded hover:bg-white hover:text-black transition-colors duration-300"
 			>
 				<p className="">{text}</p>
 				<div className="text-base">
@@ -18,16 +18,25 @@ const Item = ({ text, links }) => {
 			</li>
 			<CSSTransition in={isOpen} timeout={300} classNames="menu" unmountOnExit>
 				<Menu>
-					<button className="opacity-75 hover:opacity-100 text-base font-medium py-2 w-full px-12 mb-2" onClick={() => setIsOpen(false)}>
-						<div className="flex items-center gap-2">
-							<div className="text-sm">
-								<i class="fa fa-chevron-left" aria-hidden="true" />
+					<div className="bg-gray-700 px-12 py-3 flex relative items-center">
+						<button
+							className="opacity-75 hover:opacity-100 text-base font-medium py-2 w-full"
+							onClick={() => setIsOpen(false)}
+						>
+							<div className="flex items-center gap-2">
+								<div className="text-sm">
+									<i class="fa fa-chevron-left" aria-hidden="true" />
+								</div>
 							</div>
-							<p>Back</p>
+						</button>
+						<div className="absolute left-1/2 transform -translate-x-1/2 ">
+							<h5 className="whitespace-nowrap capitalize font-semibold text-lg text-center">
+								{text}
+							</h5>
 						</div>
-					</button>
+					</div>
 
-					<ul className=" flex flex-col gap-3 px-12">
+					<ul className="max-w-2xl mx-auto flex flex-col gap-3 px-12  mt-8">
 						{links &&
 							links.map((link) => (
 								<Item2 text={link.title || link} links={link.sublinks} />
